@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://gitee.com/zhloong/gblog-api">
     <img src="https://gitee.com/zhloong/gblog-api/badge/star.svg?theme=white" alt="star"/>
-    <img src="hhttps://gitee.com/zhloong/gblog-api/badge/fork.svg?theme=white" alt="fork"/>
+    <img src="https://gitee.com/zhloong/gblog-api/badge/fork.svg?theme=white" alt="fork"/>
   </a>
   <a href="https://github.com/zhl-yang/Gblog-Api">
       <img src="https://img.shields.io/github/stars/zhl-yang/Gblog-Api.svg?style=social" alt="Github star"/>
