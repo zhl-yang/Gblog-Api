@@ -4,9 +4,9 @@
   <img width="80" src="https://s1.ax1x.com/2022/07/15/jhlfH0.jpg"/>
 </p>
 <p align="center">
-  <a href="https://gitee.com/zhloong/Gblog-zhloong">
+  <a href="https://gitee.com/zhloong/Gblog-Api">
     <img src="https://gitee.com/zhloong/Gblog-Api/badge/star.svg?theme=white" alt="star"/>
-    <img src="https://gitee.com/zhloong/Gblog-Api/badge/fork.svg" alt="fork"/>
+    <img src="https://gitee.com/zhloong/gblog-Api/badge/fork.svg" alt="fork"/>
   </a>
   <a href="https://github.com/zhl-yang/Gblog-Api">
       <img src="https://img.shields.io/github/stars/zhl-yang/Gblog-Api.svg?style=social" alt="Github star"/>
