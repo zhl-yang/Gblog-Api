@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhloong.blog.dal.dao.BlogCommentDao">
+
+    <select id="queryArticleComments"  parameterType="Long" resultType="com.zhloong.blog.vo.BlogCommentVo">
+        SELECT vc.*, vu.avatar,vu.nickname FROM blog_comment vc LEFT JOIN blog_user vu ON vc.user_id=vu.id
+        WHERE vc.article_id=#{articleId} AND vc.level_flag='0' ORDER BY vc.create_time DESC
+    </select>
+
+    <select id="queryChildrenComments" parameterType="com.zhloong.blog.dto.ChildCommentDto" resultType="com.zhloong.blog.vo.BlogCommentVo">
+        SELECT vc.*, vu.avatar,vu.nickname FROM blog_comment vc LEFT JOIN blog_user vu ON vc.user_id=vu.id
+        WHERE vc.article_id=#{articleId} AND vc.parent_id=#{parentId} ORDER BY vc.create_time ASC
+    </select>
+</mapper>

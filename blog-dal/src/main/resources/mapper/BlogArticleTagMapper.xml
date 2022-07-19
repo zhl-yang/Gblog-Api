@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhloong.blog.dal.dao.BlogArticleTagDao">
+
+    <select id="queryArticleTags" parameterType="Integer" resultType="com.zhloong.blog.entity.BlogTagEntity">
+        SELECT vt.* from blog_article_tag vat INNER JOIN blog_tag vt ON vat.tag_id=vt.id
+        where vat.article_id=#{articleId}
+    </select>
+</mapper>

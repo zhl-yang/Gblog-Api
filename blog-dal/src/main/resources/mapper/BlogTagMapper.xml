@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhloong.blog.dal.dao.BlogTagDao">
+
+    <select id="queryHotTagDetails" resultType="com.zhloong.blog.entity.BlogTagEntity">
+        select * from blog_tag where id in
+        <foreach item="tagId" collection="array" open="(" separator="," close=")">
+            #{tagId}
+        </foreach>
+        ORDER BY FIELD(id,
+        <foreach item="tagId" collection="array" separator="," close=")">
+            #{tagId}
+        </foreach>
+    </select>
+
+
+    <select id="queryTagDetails" resultType="com.zhloong.blog.vo.BlogTagVo">
+        SELECT vt.*, count(vat.tag_id) as articles from blog_tag vt
+        LEFT JOIN blog_article_tag vat on vt.id = vat.tag_id
+        GROUP BY vt.id
+    </select>
+
+    <select id="queryOneTagDetail" parameterType="Integer" resultType="com.zhloong.blog.vo.BlogTagVo">
+        SELECT
+        vt.*,
+        count( ba.id ) AS articles
+        FROM
+        blog_tag vt
+        LEFT JOIN blog_article_tag vat ON vt.id = vat.tag_id
+        LEFT JOIN blog_article ba ON vat.article_id = ba.id
+        WHERE
+        ba.delete_time = 0
+        AND vat.tag_id = #{tagId}
+    </select>
+
+
+</mapper>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhloong.blog.dal.dao.BlogArticleDao">
+
+    <select id="queryArticleArchives" parameterType="Integer" resultType="com.zhloong.blog.dto.BlogArchivesHzDto">
+        select year(create_time) as year,month(create_time) as month,count(*) as count from blog_article
+        where delete_time = 0
+        group by year(create_time),month(create_time)
+            limit 0,#{limit}
+    </select>
+</mapper>

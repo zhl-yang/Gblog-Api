@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhloong.blog.dal.dao.BlogCategoryDao">
+
+    <select id="queryCategoryDetails" resultType="com.zhloong.blog.entity.BlogCategoryEntity">
+        select c.*, count(a.category_id) as articles from blog_category c
+                                                              left join blog_article a on a.category_id = c.id
+        group by c.id
+    </select>
+
+    <select id="queryOneCategoryDetail" parameterType="Integer" resultType="com.zhloong.blog.entity.BlogCategoryEntity">
+        select c.*, count(a.category_id) as articles from blog_category c
+                                                              left join blog_article a on a.category_id = c.id
+        where a.category_id = #{categoryId}
+    </select>
+
+</mapper>
