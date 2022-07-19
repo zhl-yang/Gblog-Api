@@ -17,7 +17,7 @@
 ### 仓库
 
 > 前端仓库：[码云](https://gitee.com/zhloong/Gblog-zhloong) | [github](https://github.com/zhl-yang/Gblog-zhloong)  
-> 后端仓库：[码云](git@gitee.com:zhloong/gblog-api.git) | [github](https://github.com/zhl-yang/Gblog-Api)
+> 后端仓库：[码云](https://gitee.com/zhloong/gblog-api) | [github](https://github.com/zhl-yang/Gblog-Api)
 >
 > [博客展示地址](https://blog.zhloong.xyz)
 
