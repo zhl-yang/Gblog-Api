@@ -45,7 +45,7 @@ spring:
 logging:
   level:
     top.lrshuai.plus.springbootmybatisplus.test.mapper.ShipmentMapper: debug
-    com.zhl.dao: debug
+    com.zhloong.blog.dal.dao: debug
 springfox:
   documentation:
     swagger-ui:
