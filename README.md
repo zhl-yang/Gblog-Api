@@ -5,25 +5,19 @@
 </p>
 <p align="center">
   <a href="https://gitee.com/zhloong/Gblog-zhloong">
-    <img src="https://gitee.com/zhloong/Gblog-zhloong/badge/star.svg?theme=white" alt="star"/>
-    <img src="https://gitee.com/zhloong/Gblog-zhloong/badge/fork.svg" alt="fork"/>
+    <img src="https://gitee.com/zhloong/Gblog-Api/badge/star.svg?theme=white" alt="star"/>
+    <img src="https://gitee.com/zhloong/Gblog-Api/badge/fork.svg" alt="fork"/>
   </a>
-  <a href="https://github.com/zhl-yang/Gblog-zhloong">
-      <img src="https://img.shields.io/github/stars/zhl-yang/Gblog-zhloong.svg?style=social" alt="Github star"/>
-      <img src="https://img.shields.io/github/forks/zhl-yang/Gblog-zhloong.svg?style=social" alt="Github forks"/>
-  </a>
-  <a href="https://github.com/vuejs/vue">
-    <img src="https://img.shields.io/badge/vue-2.6.11-brightgreen.svg" alt="vue"/>
-  </a>
-  <a href="https://github.com/zhl-yang/Gblog-zhloong/blob/master/license">
-    <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
+  <a href="https://github.com/zhl-yang/Gblog-Api">
+      <img src="https://img.shields.io/github/stars/zhl-yang/Gblog-Api.svg?style=social" alt="Github star"/>
+      <img src="https://img.shields.io/github/forks/zhl-yang/Gblog-Api.svg?style=social" alt="Github forks"/>
   </a>
 </p>
 
 ### 仓库
 
 > 前端仓库：[码云](https://gitee.com/zhloong/Gblog-zhloong) | [github](https://github.com/zhl-yang/Gblog-zhloong)  
-> 后端仓库：
+> 后端仓库：[码云](git@gitee.com:zhloong/gblog-api.git) | [github](https://github.com/zhl-yang/Gblog-Api)
 >
 > [博客展示地址](https://blog.zhloong.xyz)
 
